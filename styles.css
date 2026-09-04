@@ -259,6 +259,7 @@ textarea {
     margin: 25px 0 30px;
     color: var(--texto-secundario);
     font-size: 1.05rem;
+    text-align: justify;
 }
 .boton {
     display: inline-block;
@@ -366,6 +367,7 @@ textarea {
 }
 .sobre-texto p {
     color: var(--texto-secundario);
+    text-align: justify;
 }
 .sobre-logo:hover,
 .sobre-texto:hover {
@@ -451,6 +453,7 @@ textarea {
 .tarjeta-aprendiendo p {
     margin: 0;
     color: var(--texto-secundario);
+    text-align: justify;
 }
 .proyectos {
     display: grid;
@@ -499,6 +502,7 @@ textarea {
     min-height: 75px;
     margin: 0 0 18px;
     color: var(--texto-secundario);
+    text-align: justify;
 }
 .tecnologias {
     display: flex;
@@ -596,16 +600,17 @@ textarea {
 }
 .pie-pagina {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 50px max(25px, calc((100% - 1150px) / 2));
+    padding: 30px max(25px, calc((100% - 1150px) / 2));
     background-color: var(--superficie);
     border-top: 1px solid var(--borde);
     text-align: left;
 }
 .pie-pagina > p {
-    margin: 15px 0;
+    margin: 0;
     color: var(--texto-secundario);
 }
 .enlaces-footer {
@@ -751,6 +756,11 @@ body.claro .proyecto-imagen {
     }
     .formulario {
         padding: 25px;
+    }
+    .pie-pagina {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
     }
 }
 @media (max-width: 450px) {
