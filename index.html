@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
     <header class="encabezado">
         <a href="#inicio" class="logo">
@@ -28,17 +26,11 @@
             <a href="#contacto">Contacto</a>
         </nav>
         <div class="acciones">
-            <button
-                id="btnTema"
-                class="boton-tema"
-                type="button"
-                aria-label="Cambiar tema">
+            <button id="btnTema" class="boton-tema" type="button" aria-label="Activar tema claro">
+                <i class="fa-solid fa-moon"></i>
             </button>
-            <button
-                id="btnMenu"
-                class="boton-menu"
-                type="button"
-                aria-label="Abrir menú">
+            <button id="btnMenu" class="boton-menu" type="button" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </header>
@@ -46,35 +38,14 @@
     <main>
         <section id="inicio" class="hero">
             <div class="enlaces-flotantes">
-                <a
-                    href="https://github.com/sebarros"
-                    class="boton-flotante"
-                    id="enlaceGithub"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Ir a GitHub">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M12 0.5C5.65 0.5 0.5 5.65 0.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56
-                            0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69
-                            -1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96
-                            .1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09
-                            -.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.21-1.49
-                            3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09
-                            0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17
-                            0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5Z"/>
-                    </svg>
+                <a href="https://github.com/sebarros" target="_blank" class="boton-flotante" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
                 </a>
-                <a
-                    href="mailto:sebastianbarrosgallardo@gmail.com"
-                    class="boton-flotante"
-                    id="enlaceCorreo"
-                    aria-label="Enviar correo">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                        <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/>
-                        <path d="M3.5 6.5 12 13l8.5-6.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <a href="mailto:sebastianbarrosgallardo@gmail.com" class="boton-flotante" aria-label="Enviar correo">
+                    <i class="fa-regular fa-envelope"></i>
                 </a>
             </div>
+
             <div class="hero-contenido">
                 <div class="hero-texto">
                     <p class="etiqueta">Portafolio profesional</p>
@@ -84,20 +55,14 @@
                         Soy estudiante de Ingeniería Informática con interés en el desarrollo de software, el desarrollo web y
                         las bases de datos. Busco seguir aprendiendo y creando soluciones prácticas mediante la programación.
                     </p>
-                    <a href="#proyectos" class="boton-outline">
-                        Ver proyectos
-                    </a>
+                    <a href="#proyectos" class="boton-outline">Ver proyectos</a>
                 </div>
                 <div class="hero-logo">
-                    <div class="logo-grande">
-                        SB
-                    </div>
+                    <img src="img/image.png" alt="Sebastián Barros">
                 </div>
             </div>
         </section>
 
-
-        <!-- SOBRE MÍ -->
         <section id="sobre-mi" class="seccion sobre-mi">
             <div class="titulo-seccion">
                 <p class="etiqueta">Conóceme</p>
@@ -105,187 +70,166 @@
             </div>
             <div class="sobre-contenido">
                 <article class="sobre-logo">
-                    <div class="logo-grande">
-                        SB
-                    </div>
+                    <img src="img/image.png" alt="Sebastián Barros" class="sobre-foto">
                     <p>Estudiante de Ingeniería Informática</p>
                 </article>
                 <article class="sobre-texto">
                     <h3>Hola, soy Sebastián</h3>
                     <p>
-                        Soy estudiante de Ingeniería Informática con interés en el desarrollo de software y la creación
-                        de soluciones que resuelvan problemas reales. Durante mi formación he trabajado con distintas
-                        tecnologías, desarrollando proyectos tanto académicos como personales.
+                        Estudiante de Ingeniería Informática, enfocado en el desarrollo de software y en la creación de
+                        soluciones tecnológicas que permitan resolver problemas reales. Durante mi formación he trabajado con
+                        distintas tecnologías, desarrollando proyectos tanto académicos como personales que me han permitido
+                        aplicar y fortalecer mis conocimientos de programación.
                     </p>
+
                     <p>
-                        Me interesa aprender nuevas herramientas, mejorar mis habilidades de programación y seguir
-                        creciendo en áreas como el desarrollo web, la arquitectura de software y las tecnologías
-                        emergentes. Busco seguir adquiriendo experiencia a través de proyectos que me permitan aplicar
-                        conocimientos y enfrentar nuevos desafíos.
+                        Me interesa especialmente el desarrollo de software y la exploración de nuevas
+                        tecnologías. Busco seguir ampliando mis conocimientos, mejorar constantemente mis habilidades y enfrentar
+                        nuevos desafíos que me permitan crecer como profesional en el área informática.
                     </p>
+
+                    <p>
+                        Antes de iniciar mi formación superior, obtuve el título de Técnico en Contabilidad, experiencia que
+                        complementa mi perfil y me ha permitido desarrollar habilidades relacionadas
+                        con la organización, el análisis y el manejo de información.
+                    </p>
+
                 </article>
             </div>
         </section>
 
-        <!-- HABILIDADES -->
         <section id="habilidades" class="seccion">
             <div class="titulo-seccion">
                 <p class="etiqueta">Tecnologías</p>
                 <h2>Mis habilidades</h2>
-                <p>
-                    Principales herramientas y tecnologías con las que he trabajado:
-                </p>
+                <p>Principales herramientas y tecnologías con las que he trabajado:</p>
             </div>
             <div class="habilidades">
                 <article class="habilidad">
-                    <span class="icono"><i class="devicon-java-plain colored" aria-hidden="true"></i></span>
+                    <span class="icono"><i class="fa-brands fa-java"></i></span>
                     <h3>Java</h3>
                 </article>
                 <article class="habilidad">
-                    <span class="icono"><i class="devicon-python-plain colored" aria-hidden="true"></i></span>
+                    <span class="icono"><i class="fa-brands fa-python"></i></span>
                     <h3>Python</h3>
                 </article>
                 <article class="habilidad">
-                    <span class="icono"><i class="devicon-html5-plain colored" aria-hidden="true"></i></span>
-                    <h3>HTML</h3>
-                </article>
-                <article class="habilidad">
-                    <span class="icono"><i class="devicon-css3-plain colored" aria-hidden="true"></i></span>
-                    <h3>CSS</h3>
-                </article>
-                <article class="habilidad">
-                    <span class="icono"><i class="devicon-javascript-plain colored" aria-hidden="true"></i></span>
+                    <span class="icono"><i class="fa-brands fa-square-js"></i></span>
                     <h3>JavaScript</h3>
                 </article>
                 <article class="habilidad">
-                    <span class="icono"><i class="devicon-mysql-plain colored" aria-hidden="true"></i></span>
+                    <span class="icono"><i class="fa-solid fa-database"></i></span>
                     <h3>SQL</h3>
                 </article>
                 <article class="habilidad">
-                    <span class="icono"><i class="devicon-git-plain colored" aria-hidden="true"></i></span>
+                    <span class="icono"><i class="fa-brands fa-git-alt"></i></span>
                     <h3>Git / GitHub</h3>
                 </article>
                 <article class="habilidad">
-                    <span class="icono icono-mono"><i class="fa-brands fa-aws"></i></span>
+                    <span class="icono"><i class="fa-brands fa-aws"></i></span>
                     <h3>AWS</h3>
                 </article>
                 <article class="habilidad">
-                    <span class="icono"><i class="devicon-spring-plain colored" aria-hidden="true"></i></span>
-                    <h3>Spring Boot</h3>
-                </article>
-                <article class="habilidad">
-                    <span class="icono"><i class="devicon-docker-plain colored" aria-hidden="true"></i></span>
+                    <span class="icono"><i class="fa-brands fa-docker"></i></span>
                     <h3>Docker</h3>
                 </article>
             </div>
         </section>
 
-        <!-- ACTUALMENTE APRENDIENDO -->
         <section id="aprendiendo" class="seccion aprendiendo">
             <div class="titulo-seccion">
                 <p class="etiqueta">En constante aprendizaje</p>
                 <h2>Actualmente aprendiendo</h2>
-                <p>
-                    Algunas tecnologías y áreas que estoy explorando.
-                </p>
+                <p>Algunas tecnologías y áreas que estoy explorando:</p>
             </div>
             <div class="aprendiendo-contenido">
                 <article class="tarjeta-aprendiendo">
-                    <span class="icono-grande">CS</span>
+                    <span class="icono-grande"><i class="fa-solid fa-lock"></i></span>
                     <h3>Ciberseguridad</h3>
                     <p>
-                        Aprendiendo conceptos de seguridad informática, buenas prácticas
-                        de protección de sistemas y fundamentos de redes y vulnerabilidades.
+                        Aprendiendo conceptos de seguridad informática, buenas prácticas de protección de sistemas y
+                        fundamentos de redes y vulnerabilidades.
                     </p>
                 </article>
                 <article class="tarjeta-aprendiendo">
-                    <span class="icono-grande">IA</span>
+                    <span class="icono-grande"><i class="fa-solid fa-robot"></i></span>
                     <h3>Inteligencia artificial</h3>
                     <p>
-                        Explorando herramientas de IA, automatización y aplicaciones
-                        prácticas para el desarrollo de software.
+                        Explorando herramientas de IA, automatización y aplicaciones prácticas para el desarrollo de software.
                     </p>
                 </article>
                 <article class="tarjeta-aprendiendo">
-                    <span class="icono-grande">&lt;/&gt;</span>
+                    <span class="icono-grande"><i class="fa-solid fa-code"></i></span>
                     <h3>Lenguajes de programación</h3>
                     <p>
-                        Fortaleciendo mis conocimientos en lenguajes que ya conozco
-                        mientras continúo aprendiendo nuevas tecnologías.
+                        Fortaleciendo mis conocimientos en lenguajes que ya conozco mientras continúo aprendiendo nuevas tecnologías.
                     </p>
                 </article>
             </div>
         </section>
 
-        <!-- PROYECTOS -->
         <section id="proyectos" class="seccion">
             <div class="titulo-seccion">
                 <p class="etiqueta">Mis trabajos</p>
                 <h2>Proyectos</h2>
-                <p>
-                    Algunos proyectos que he realizado:
-                </p>
+                <p>Algunos proyectos que he realizado:</p>
             </div>
             <div class="proyectos">
                 <article class="proyecto">
                     <div class="proyecto-imagen">
-                        <span>DOOR'S</span>
+                        <img src="img/doors.png" alt="Proyecto DOOR'S">
                     </div>
                     <div class="proyecto-contenido">
                         <h3>DOOR'S</h3>
                         <p>
                             Sistema de control de acceso para condominios con generación de códigos QR, registro de visitas
-                            y apertura remota de portón mediante una aplicación móvil conectada a un backend en Spring Boot.
+                            y apertura remota de portón mediante una aplicación móvil conectada a un backend.
                         </p>
                         <div class="tecnologias">
-                            <span><i class="devicon-android-plain colored" aria-hidden="true"></i>Android</span>
-                            <span><i class="devicon-kotlin-plain colored" aria-hidden="true"></i>Kotlin</span>
-                            <span><i class="devicon-java-plain colored" aria-hidden="true"></i>Java</span>
+                            <span><i class="fa-brands fa-android"></i> Android</span>
+                            <span><i class="fa-solid fa-mobile-screen"></i> Kotlin</span>
+                            <span><i class="fa-brands fa-java"></i> Java</span>
                         </div>
-                        <a href="https://github.com/seba1384/Doors" class="enlace-github">
-                            GitHub ↗
-                        </a>
+                        <a href="https://github.com/seba1384/Doors" target="_blank" class="enlace-github">GitHub ↗</a>
                     </div>
                 </article>
 
                 <article class="proyecto">
                     <div class="proyecto-imagen">
-                        <span>CHATBOT RIPLEY</span>
+                        <img src="img/ripley.jpg" alt="Proyecto ChatBot Ripley">
                     </div>
                     <div class="proyecto-contenido">
                         <h3>ChatBot Ripley</h3>
                         <p>
-                            Chatbot con inteligencia artificial diseñado para asistir consultas sobre productos y
-                            servicios, integrando procesamiento de lenguaje natural y servicios en la nube.
+                            Chatbot con inteligencia artificial diseñado para asistir consultas sobre productos y servicios,
+                            integrando procesamiento de lenguaje natural y servicios en la nube.
                         </p>
                         <div class="tecnologias">
-                            <span><i class="devicon-python-plain colored" aria-hidden="true"></i>Python</span>
-                            <span><i class="devicon-css3-plain colored" aria-hidden="true"></i>CSS</span>
-                            <span><i class="devicon-amazonwebservices-original icono-mono" aria-hidden="true"></i>AWS</span>
+                            <span><i class="fa-brands fa-python"></i> Python</span>
+                            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span><i class="fa-brands fa-aws"></i> AWS</span>
                         </div>
-                        <a href="https://github.com/sebarros/ripley-ai" class="enlace-github">
-                            GitHub ↗
-                        </a>
+                        <a href="https://github.com/sebarros/ripley-ai" target="_blank" rel="noopener noreferrer" class="enlace-github">GitHub ↗</a>
                     </div>
                 </article>
 
                 <article class="proyecto">
                     <div class="proyecto-imagen">
-                        <span>IP</span>
+                        <img src="img/ip.jpg" alt="Proyecto Instituto Pacifico">
                     </div>
                     <div class="proyecto-contenido">
                         <h3>Instituto Pacifico</h3>
                         <p>
-                            Plataforma de gestión académica basada en una arquitectura de microservicios para
-                            administrar usuarios, cursos y procesos internos de una institución educativa.
+                            Plataforma de gestión académica basada en una arquitectura de microservicios para administrar
+                            usuarios, cursos y procesos internos de una institución educativa.
                         </p>
                         <div class="tecnologias">
-                            <span><i class="devicon-java-plain colored" aria-hidden="true"></i>Java</span>
-                            <span><i class="devicon-docker-plain colored" aria-hidden="true"></i>Docker</span>
-                            <span><i class="devicon-spring-plain colored" aria-hidden="true"></i>Spring Boot</span>
-                            <span>Microservicios</span>
+                            <span><i class="fa-brands fa-java"></i> Java</span>
+                            <span><i class="fa-brands fa-docker"></i> Docker</span>
+                            <span><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                            <span><i class="fa-solid fa-server"></i> Microservicios</span>
                         </div>
-                        <a href="https://github.com/thealonsiiniix/DSY1103-Gestion-Academica-EduCore-" class="enlace-github">
+                        <a href="https://github.com/thealonsiiniix/DSY1103-Gestion-Academica-EduCore-" target="_blank" class="enlace-github">
                             GitHub ↗
                         </a>
                     </div>
@@ -293,120 +237,61 @@
 
                 <article class="proyecto">
                     <div class="proyecto-imagen">
-                        <span>BITSS</span>
+                        <img src="img/bits.png" alt="Proyecto BITSS">
                     </div>
                     <div class="proyecto-contenido">
                         <h3>BITSS</h3>
                         <p>
-                            Proyecto desarrollado con una arquitectura de microservicios, utilizando Spring Boot,
-                            Docker y AWS para crear una solución escalable orientada a servicios.
+                            Sitio web de ventas de videojuegos digitales, desarrollado con una arquitectura de microservicios,
+                            utilizando Spring Boot, Docker y AWS para crear una solución escalable orientada a servicios.
                         </p>
                         <div class="tecnologias">
-                            <span><i class="devicon-spring-plain colored" aria-hidden="true"></i>Spring Boot</span>
-                            <span><i class="devicon-docker-plain colored" aria-hidden="true"></i>Docker</span>
-                            <span>Microservicios</span>
-                            <span><i class="devicon-java-plain colored" aria-hidden="true"></i>Java</span>
-                            <span><i class="devicon-amazonwebservices-original icono-mono" aria-hidden="true"></i>AWS</span>
+                            <span><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                            <span><i class="fa-brands fa-docker"></i> Docker</span>
+                            <span><i class="fa-solid fa-server"></i> Microservicios</span>
+                            <span><i class="fa-brands fa-java"></i> Java</span>
+                            <span><i class="fa-brands fa-aws"></i> AWS</span>
                         </div>
-                        <a href="https://github.com/sebarros/BITSS" class="enlace-github">
-                            GitHub ↗
-                        </a>
-                    </div>
-                </article>
-
-                <article class="proyecto">
-                    <div class="proyecto-imagen">
-                        <span>SASS</span>
-                    </div>
-                    <div class="proyecto-contenido">
-                        <h3>SASS</h3>
-                        <p>
-                            Aplicación móvil desarrollada en Android con Kotlin, enfocada en ofrecer una experiencia
-                            intuitiva y una interfaz optimizada para dispositivos móviles.
-                        </p>
-                        <div class="tecnologias">
-                            <span><i class="devicon-android-plain colored" aria-hidden="true"></i>Android</span>
-                            <span><i class="devicon-kotlin-plain colored" aria-hidden="true"></i>Kotlin</span>
-                        </div>
-                        <a href="https://github.com/sebarros/Project_AquaChile_SEASS" class="enlace-github">
-                            GitHub ↗
-                        </a>
+                        <a href="https://github.com/sebarros/BITSS" target="_blank" class="enlace-github">GitHub ↗</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- CONTACTO -->
         <section id="contacto" class="seccion contacto">
             <div class="contacto-contenido">
-            <div class="contacto-info">
-                <p class="etiqueta">Ponte en contacto</p>
-                <h2>Contacto</h2>
-                <p>
-                    ¿Tienes alguna pregunta? Puedes escribirme.
-                </p>
+                <div class="contacto-info">
+                    <p class="etiqueta">Ponte en contacto</p>
+                    <h2>Contacto</h2>
+                    <p>¿Tienes alguna pregunta? Puedes escribirme.</p>
+                </div>
+                <form id="formularioContacto" class="formulario" action="https://formsubmit.co/sebastianbarrosgallardo@gmail.com" method="POST" novalidate>
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde mi portafolio">
+                <input type="hidden" name="_captcha" value="false">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre">
+                <p id="errorNombre" class="mensaje-error"></p>
             </div>
-
-            <form id="formularioContacto" class="formulario" novalidate>
-                <div class="campo">
-                    <label for="nombre">
-                        Nombre
-                    </label>
-                    <input
-                        id="nombre"
-                        name="nombre"
-                        type="text"
-                        placeholder="Ingresa tu nombre">
-                    <p id="errorNombre" class="mensaje-error"></p>
-                </div>
-
-                <div class="campo">
-                    <label for="correo">
-                        Correo electrónico
-                    </label>
-                    <input
-                        id="correo"
-                        name="correo"
-                        type="email"
-                        placeholder="correo@ejemplo.com">
-                    <p id="errorCorreo" class="mensaje-error"></p>
-                </div>
-
-
-                <div class="campo">
-                    <label for="mensaje">
-                        Mensaje
-                    </label>
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        rows="4"
-                        placeholder="Escribe tu mensaje"></textarea>
-                    <p id="errorMensaje" class="mensaje-error"></p>
-                </div>
-                <button
-                    type="submit"
-                    class="boton">
-                    Enviar mensaje
-                </button>
-                <p
-                    id="estadoFormulario"
-                    class="estado-formulario"
-                    aria-live="polite">
-                </p>
-            </form>
+    <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="email" type="email" placeholder="correo@ejemplo.com">
+        <p id="errorCorreo" class="mensaje-error"></p>
+    </div>
+    <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+        <p id="errorMensaje" class="mensaje-error"></p>
+            </div>
+                <button type="submit" class="boton">Enviar mensaje</button>
+                <p id="estadoFormulario" class="estado-formulario" aria-live="polite"></p></form>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="pie-pagina">
-        <p>
-            Creado y diseñado por Sebastián Barros.
-        </p>
-        <p class="copyright">
-            © 2026 Sebastián Barros Gallardo
-        </p>
+        <p>Creado y diseñado por Sebastián Barros.</p>
+        <p class="copyright">© 2026 Sebastián Barros Gallardo</p>
     </footer>
 </body>
 </html>
